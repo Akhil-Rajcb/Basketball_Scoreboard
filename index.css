@@ -1,24 +1,35 @@
-body{
-    font-weight: bold;
-    text-align: center;
-    background: #064486;
-}
-.scoreboard {
+ body {
+      font-weight: bold;
+      text-align: center;
+      background: #064486;
+    }
+
+    .scoreboard {
       display: flex;
       justify-content: space-around;
       margin: 100px;
-      padding: 100px;
+      padding: 50px;
       background: #333;
+      flex-wrap: wrap;
       border-radius: 10px;
-}
-   .score {
+      flex-direction: row;
+    }
+
+    .team {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .score {
       font-size: 48px;
       margin: 10px 0;
       color: #f9c74f;
     }
+
     button:hover {
       background: #d62828;
     }
+
     button {
       padding: 10px 20px;
       font-size: 16px;
@@ -28,16 +39,22 @@ body{
       background: #f94144;
       color: white;
       transition: background 0.3s;
+      margin: 5px;
     }
-    .btn {
-      margin-top: 150px;
-      position:absolute;
+
+    .reset-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
-     h2 {
+
+    h2 {
       margin: 0;
       font-size: 50px;
     }
-    h1{
-        margin:50px;
-        font-size: 70px;
+
+    h1 {
+      margin: 50px;
+      font-size: 70px;
     }
